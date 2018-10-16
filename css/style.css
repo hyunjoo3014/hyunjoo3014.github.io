@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+/* 모바일 환경을 위한 레이아웃 */
+.container{
+  background-color: yellow;
+  height: 100vh;
+  padding-top: 1em; 
+}
+.hadding{
+  margin-top: 0;
+}
+.grid{
+  background-color:pink;
+  margin: 1em;
+}
+/* 데스크탑 환경을 위한 스타일 */
+@media screen and (min-width: 1280px){
+ .card{
+    background-color: tomato;
+    display: flex; 
+    flex-wrap: wrap;
+ }
+  .card1, .card2, .card3, .card4{
+    background-color: lime;
+    width: calc(50% - 2em);
+  }
+}

@@ -1,0 +1,133 @@
+@charset 'utf-8';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 공통 */
+.rwd {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+}
+h1 {
+  padding: 0 20px;
+  color: #989898;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.project-detail time{
+  display: block;
+  background: yellow;
+  text-align: right;
+}
+.project-detail h2{
+  text-align: center;
+}
+.project-detail p{
+  text-align: left;
+}
+
+
+.main-container {
+  padding: 30px;
+}
+.title1 {
+  margin: 110px 0 0 -2px;
+  display: inline-block;
+  font-size: 40px;
+}
+.title2 {
+  margin: 50px 0 0 0;
+  font-size: 20px;
+}
+
+.title3 {
+  color: #282828;
+  margin: 30px 0 50px 0;
+  font-size: 15px;
+  text-align: right;
+}
+
+/* intro */
+
+.intro{
+  min-height: 650px;
+}
+.navigation {
+  /* padding: 15px; */
+  position: fixed;
+  animation: firstFadeInAndDrop 0.5s;
+  height: 40px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  /* margin: 10px; */
+  background-color: black;
+  margin-right: 15px;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.email-box {
+  color: azure;
+}
+
+.link-box {
+  color: azure;
+}
+
+
+
+/* work */
+
+.work {
+  background-color: #eeeeee;
+}
+.section-header {
+  color: #7d7d80;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.project-container{
+  background-color: #fff;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+/* footer */
+
+.footer{
+  background-color: black;
+  min-height: 100px;
+  
+  /* 글자 중간정렬 */
+  display: flex;
+  justify-content: center;
+}
+
+.copyright{
+  color: white;
+  margin-top: 50px;
+ 
+
+
+}

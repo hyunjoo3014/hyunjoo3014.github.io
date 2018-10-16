@@ -1,0 +1,192 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900|Roboto+Slab&subset=korean");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #181818;
+  background-color: #e9edef;
+  font-family: "Roboto Slab", serif;
+}
+a {
+  color: inherit;
+}
+.card {
+  background-color: #ffffff;
+}
+
+/* all device & mobile device---------------------------
+
+ */
+.rwd {
+  max-width: 100%;
+  height: auto;
+}
+.block {
+  display: block;
+}
+
+.text-1 {
+  font-size: 2.4rem;
+  color: red;
+  margin: 20px 0;
+}
+.noto {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.t-shadow {
+  text-shadow: 1px 1px 0 gray, 2px 2px 0 gray;
+}
+.b-shadow {
+  box-shadow: 5px 5px 10px 0 #ccc;
+}
+.text-2 {
+  font-size: 2rem;
+  color: black;
+
+  margin: 20px 0;
+}
+.text-3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.header {
+  padding: 50px 20px;
+  text-align: center;
+}
+/* branding */
+.branding {
+  margin: 0 auto;
+  min-width: 100px;
+  width: 40%;
+}
+/* main menu */
+.main-menu {
+  display: flex;
+  justify-content: center;
+  /* li를 쓸때 항상 같이 쓸 두가지 
+  list style type, padding left */
+  list-style-type: none;
+  padding-left: 0;
+}
+/* a를 넣으면 부모안에 자식요소가 다 선택됨 */
+.main-menu a {
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  transition: border-bottom 400ms;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+  border-bottom: 3px solid currentColor;
+}
+.main-menu a.active {
+  border-bottom: 3px solid currentColor;
+}
+.wrapper {
+  padding: 0 40px;
+}
+
+.main {
+  min-height: 70vh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  /* 상자 정렬 */
+  align-items: center;
+  /* 텍스트 정렬 */
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  transition: all 500ms;
+}
+.card:hover {
+  transform: translate(-5px, -5px);
+}
+.card-img {
+  width: 50%;
+  max-width: 300px;
+}
+.card-content {
+  padding-top: 20px;
+  width: 80%;
+}
+.footer {
+  padding: 50px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* contact */
+.contact {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+.contact a {
+  margin: 0 10px;
+}
+
+.contact .dot::before {
+  content: "·";
+}
+
+/* desktop --------------------------------------------------------------*/
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .header {
+    width: 20%;
+    max-width: 150px;
+  }
+  .header-content {
+    display: none;
+  }
+  .main-menu {
+    flex-direction: column;
+  }
+  .main-menu li {
+    margin: 10px;
+  }
+  .wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .card-img {
+    width: 20%;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  .card-content {
+    text-align: center;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact {
+    font-size: 1.2rem;
+  }
+}
