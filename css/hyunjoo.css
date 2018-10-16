@@ -15,22 +15,28 @@ body {
 }
 h1 {
   padding: 0 20px;
-  color: #989898;
   font-size: 15px;
+  color: beige;
   display: inline-block;
   text-align: center;
 }
-
+/* a링크 자체의 컬러를 제외시키는 설정(default값으로 지정하면 좋음) */
+a{
+  color: inherit;
+}
 .project-detail time{
   display: block;
-  background: yellow;
-  text-align: right;
+  text-align: left;
+  color: #181818;
 }
 .project-detail h2{
   text-align: center;
+  font-size: 35px;
+  color: #082220;
 }
 .project-detail p{
-  text-align: left;
+  text-align: center;
+    color: #082220;
 }
 
 
@@ -51,7 +57,7 @@ h1 {
   color: #282828;
   margin: 30px 0 50px 0;
   font-size: 15px;
-  text-align: right;
+  text-align: left;
 }
 
 /* intro */
